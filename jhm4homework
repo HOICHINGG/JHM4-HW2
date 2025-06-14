@@ -1,0 +1,22 @@
+CREATE DATABASE SnackInventory
+
+
+use SnackInventory
+
+
+DROP TABLE IF EXISTS SnackInventory
+
+
+CREATE TABLE SnackInventory(
+    SnackID int PRIMARY KEY,
+    Name varchar(255) NOT NULL,
+    HealthyOption BOOLEAN NOT NULL,
+    StockCount int(20) NOT NULL,
+)
+
+
+INSERT INTO SnackInventory (SnackID,Name, HealthyOption, StockCount) VALUES
+(1,'Lays Classic Chips', 0, 120),
+(2,'Kind Almond Bars', 1, 85),
+(3,'Oreo Cookies', 0, 200),
+(4,'Dried Mango Slices', 1, 65);
